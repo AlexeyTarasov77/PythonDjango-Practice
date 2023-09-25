@@ -2,12 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% block title %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'Main/css/main.css' %}">
     <title>Головна сторiнка</title>
+    {% endblock %}
 </head>
 <body>
+    <header>
+        <a href="{% url 'main' %}">Главная страница</a>
+        <a href="{% url 'books' %}">Книги</a>
+        <a href="{% url 'authors' %}">Авторы</a>
+    </header>
+    {% block content %}
     <h1>Это главная страница с информацией о книгах</h1>
     
     <img src="https://i.work.ua/article/1161b.jpg" alt="Книга1">
@@ -37,6 +45,6 @@
     </h5>
 
     <img src="https://n1s1.hsmedia.ru/c0/f3/11/c0f3118d2a80f0f62409e68ccefab345/728x542_1_390d29f38af62661e1e5cd685acda5a2@1000x745_0xac120003_18591848241576673801.jpg" alt="Книга4">
-
+{% endblock %}
 </body>
 </html>

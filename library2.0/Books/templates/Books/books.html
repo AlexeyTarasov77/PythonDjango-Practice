@@ -1,13 +1,12 @@
+{% extends 'main/main.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+{% block settings %}
     <link rel="stylesheet" href="{% static 'Main/css/main.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
-</head>
-<body>
+{% endblock %}
+{% block content %}
     <h1>Це сторiнка книги</h1>
-</body>
-</html>
+{% endblock %}

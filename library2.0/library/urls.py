@@ -24,7 +24,7 @@ from Authors.views import showauthors
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mainpage),
-    path('books/', showbooks),
-    path('authors/', showauthors)
+    path('', mainpage, name='main'),
+    path('books/', showbooks, name='books'),
+    path('authors/', showauthors, name='authors')
 ]
