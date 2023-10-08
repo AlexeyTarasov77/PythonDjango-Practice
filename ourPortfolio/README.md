@@ -13,6 +13,7 @@
 ## Description our-project
 
 Our project tells who has what hobby, education, what achievements we have in programming, and what each of the developers likes to do in their free time.
+If you see that website has loaded incorrect do a hard refresh of each web page on the website using the keyboard shortcut: Ctrl + F5 or Ctrl + Shift + R or Shift + F5 on windows and Mac: Command+Shift+R
 
 ***
 
